@@ -400,7 +400,7 @@
       <p class="contact-body reveal">Whether you know exactly what you need or you're still figuring it out — reach out and we'll talk through it.</p>
       <div class="c-detail reveal">
         <div class="c-icon">📧</div>
-        <div class="c-val"><div class="c-label">Email</div><a href="/cdn-cgi/l/email-protection#bbdadfd6d2d5fbd9d7dad8d0d9d2c9dfc8cfc9dacfdedcd2d895d5decf"><span class="__cf_email__" data-cfemail="b9d8ddd4d0d7f9dbd5d8dad2dbd0cbddcacdcbd8cddcded0da97d7dccd">[email&#160;protected]</span></a></div>
+        <div class="c-val"><div class="c-label">Email</div><a href="mailto:admin@blackbirdstrategic.net">admin@blackbirdstrategic.net</a></div>
       </div>
       <div class="c-detail reveal">
         <div class="c-icon">📞</div>
@@ -452,7 +452,7 @@
   </ul>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 60));
 
@@ -461,4 +461,22 @@
       if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 55); obs.unobserve(e.target); }
     });
   }, { threshold: 0.08 });
-  document.querySelectorAll('.reveal').forEach(el => 
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.target.closest('form') || e.target;
+    const fields = form.querySelectorAll('input, select, textarea');
+    const [first, last, email, phone, service, message] = [...fields].map(f => (f.value || '').trim());
+    const subject = `Project Inquiry — ${first} ${last}`.trim();
+    const body =
+      `Name: ${first} ${last}\n` +
+      `Email: ${email}\n` +
+      `Phone: ${phone}\n` +
+      `Service: ${service}\n\n` +
+      `${message}`;
+    window.location.href = `mailto:admin@blackbirdstrategic.net?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  }
+</script>
+</body>
+</html> 
