@@ -331,7 +331,7 @@
 <!-- NAV -->
 <nav id="nav">
   <a href="#hero" class="nav-logo">
-    <img src="https://static.wixstatic.com/media/c4d343_75e3cf119e804202861020f49ecbacd4~mv2.png" alt="Blackbird Strategic">
+    <img src="/img/logo.png" alt="Blackbird Strategic">
     <span class="nav-brand">Blackbird Strategic</span>
   </a>
   <ul class="nav-links">
@@ -371,7 +371,7 @@
     </div>
   </div>
   <div class="hero-right">
-    <img src="https://static.wixstatic.com/media/c4d343_1409e0cb5c2d4f18997f03c6523b55d7~mv2.jpeg/v1/fill/w_1920,h_1080,al_c,q_85/c4d343_1409e0cb5c2d4f18997f03c6523b55d7~mv2.jpeg" alt="Aerial view">
+    <img src="/img/hero.jpg" alt="Aerial view">
     <div class="hero-right-tag">
       <span class="hrt-label">Now Serving</span>
       <span class="hrt-value">Southeast United States</span>
@@ -474,13 +474,13 @@
     </div>
   </div>
   <div class="gallery-grid">
-    <div class="gi gi-1"><img src="https://static.wixstatic.com/media/c4d343_1409e0cb5c2d4f18997f03c6523b55d7~mv2.jpeg/v1/fill/w_1400,h_900,al_c,q_85/c4d343_1409e0cb5c2d4f18997f03c6523b55d7~mv2.jpeg" alt="Aerial view" loading="lazy"></div>
-    <div class="gi gi-2"><img src="https://static.wixstatic.com/media/c4d343_cda795997bdb48c79308c05f1b04b550~mv2.jpeg/v1/fill/w_800,h_960,al_c,q_85/c4d343_cda795997bdb48c79308c05f1b04b550~mv2.jpeg" alt="Aerial forest" loading="lazy"></div>
-    <div class="gi gi-3"><img src="https://static.wixstatic.com/media/c4d343_55cda5d7b3da43168fe21e8b48791e41~mv2.jpeg/v1/fill/w_720,h_540,al_c,q_85/c4d343_55cda5d7b3da43168fe21e8b48791e41~mv2.jpeg" alt="Aerial site" loading="lazy"></div>
-    <div class="gi gi-4"><img src="https://static.wixstatic.com/media/c4d343_71880630c377494c9c0563f274026e41~mv2.jpeg/v1/crop/x_0,y_1014,w_6144,h_3082/fill/w_720,h_540,al_c,q_85/c4d343_71880630c377494c9c0563f274026e41~mv2.jpeg" alt="Aerial landscape" loading="lazy"></div>
-    <div class="gi gi-5"><img src="https://static.wixstatic.com/media/c4d343_fc2fbb405ef7449bb09dd6676e5ee2d8~mv2.jpeg/v1/fill/w_720,h_540,al_c,q_85/c4d343_fc2fbb405ef7449bb09dd6676e5ee2d8~mv2.jpeg" alt="Aerial property" loading="lazy"></div>
-    <div class="gi gi-6"><img src="https://static.wixstatic.com/media/c4d343_7132ac3193bf4bd3b121e85e82a4de4e~mv2.png/v1/fill/w_1200,h_600,al_c,q_90/c4d343_7132ac3193bf4bd3b121e85e82a4de4e~mv2.png" alt="Wide aerial" loading="lazy"></div>
-    <div class="gi gi-7"><img src="https://static.wixstatic.com/media/c4d343_e9cd7adc447545199cc86a1a4abeb88b~mv2.jpeg/v1/fill/w_980,h_600,al_c,q_85/c4d343_e9cd7adc447545199cc86a1a4abeb88b~mv2.jpeg" alt="Aerial dusk" loading="lazy"></div>
+    <div class="gi gi-1"><img src="/img/hero.jpg" alt="Aerial view" loading="lazy"></div>
+    <div class="gi gi-2"><img src="/img/aerial-forest.jpg" alt="Aerial forest" loading="lazy"></div>
+    <div class="gi gi-3"><img src="/img/aerial-site.jpg" alt="Aerial site" loading="lazy"></div>
+    <div class="gi gi-4"><img src="/img/aerial-landscape.jpg" alt="Aerial landscape" loading="lazy"></div>
+    <div class="gi gi-5"><img src="/img/aerial-property.jpg" alt="Aerial property" loading="lazy"></div>
+    <div class="gi gi-6"><img src="/img/wide-aerial.jpg" alt="Wide aerial" loading="lazy"></div>
+    <div class="gi gi-7"><img src="/img/aerial-dusk.jpg" alt="Aerial dusk" loading="lazy"></div>
   </div>
 </section>
 
@@ -489,7 +489,7 @@
   <div class="about-inner">
     <div class="about-left reveal">
       <div class="about-img">
-        <img src="https://static.wixstatic.com/media/c4d343_71511fce756d42c588e65171344be0fa~mv2.jpeg" alt="Blackbird Strategic">
+        <img src="/img/about.jpg" alt="Blackbird Strategic">
         <div class="about-img-caption">
           <span class="aic-icon">📍</span>
           <span class="aic-text">Headquartered North of Charlotte, NC</span>
@@ -556,7 +556,7 @@
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="contact-inner">
+  <div class="contact-inner" style="grid-template-columns:1fr;max-width:720px;">
     <div class="contact-left">
       <p class="section-label reveal">Get In Touch</p>
       <h2 class="sec-title reveal">Let's Talk<br>About Your<br><em>Project</em></h2>
@@ -574,39 +574,13 @@
       </div>
     </div>
 
-    <div class="contact-form reveal">
-      <div class="form-title">Send Us a Message</div>
-      <form onsubmit="handleSubmit(event)">
-        <div class="cf-row">
-          <div class="fg"><label>First Name</label><input type="text" placeholder="Matthew"></div>
-          <div class="fg"><label>Last Name</label><input type="text" placeholder="Gill"></div>
-        </div>
-        <div class="fg"><label>Email Address *</label><input type="email" placeholder="you@company.com" required></div>
-        <div class="fg"><label>Phone Number</label><input type="tel" placeholder="(704) 000-0000"></div>
-        <div class="fg">
-          <label>Service Interested In</label>
-          <select>
-            <option value="">— Select a service —</option>
-            <option>Residential Real Estate</option>
-            <option>Commercial Real Estate</option>
-            <option>Construction Progress</option>
-            <option>Promotional Cinematography</option>
-            <option>Event Coverage</option>
-            <option>Aerial Inspection</option>
-            <option>Other / Not Sure Yet</option>
-          </select>
-        </div>
-        <div class="fg"><label>Tell us about your project *</label><textarea placeholder="Location, timeline, scope — whatever helps us understand your needs." required></textarea></div>
-        <button type="submit" class="form-btn">Send Message →</button>
-      </form>
-    </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <a href="#hero" class="footer-logo">
-    <img src="https://static.wixstatic.com/media/c4d343_75e3cf119e804202861020f49ecbacd4~mv2.png" alt="Blackbird Strategic">
+    <img src="/img/logo.png" alt="Blackbird Strategic">
     <span style="font-family:'Outfit',sans-serif;font-weight:600;font-size:0.82rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);">Blackbird Strategic</span>
   </a>
   <p class="footer-copy">© 2026 Blackbird Strategic Holdings, LLC · Charlotte, NC</p>
@@ -628,21 +602,6 @@
     });
   }, { threshold: 0.08 });
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    const form = e.target.closest('form') || e.target;
-    const fields = form.querySelectorAll('input, select, textarea');
-    const [first, last, email, phone, service, message] = [...fields].map(f => (f.value || '').trim());
-    const subject = `Project Inquiry — ${first} ${last}`.trim();
-    const body =
-      `Name: ${first} ${last}\n` +
-      `Email: ${email}\n` +
-      `Phone: ${phone}\n` +
-      `Service: ${service}\n\n` +
-      `${message}`;
-    window.location.href = `mailto:admin@blackbirdstrategic.net?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  }
 </script>
 </body>
 </html> 
