@@ -166,7 +166,8 @@
     .svc:hover { background: var(--navy); }
     .svc:hover .svc-name, .svc:hover .svc-desc { color: var(--white); }
     .svc:hover .svc-num { color: rgba(255,255,255,0.08); }
-    .svc:hover .svc-icon-wrap { background: var(--orange); border-color: var(--orange); }
+    .svc:hover .svc-icon-wrap { background: var(--orange); border-color: var(--orange); color: var(--white); }
+    .svc-icon-wrap svg, .cred-icon svg, .aic-icon svg, .c-icon svg, .svc-icon svg { display: block; }
     .svc-num {
       font-family: 'Bebas Neue', sans-serif; font-size: 5rem; color: var(--paper);
       position: absolute; top: -10px; right: 16px; line-height: 1; transition: color 0.25s;
@@ -211,7 +212,7 @@
     .about-img-caption {
       background: var(--orange); padding: 20px 24px; display: flex; align-items: center; gap: 16px;
     }
-    .aic-icon { font-size: 1.4rem; }
+    .aic-icon { font-size: 1.4rem; color: var(--white); display: inline-flex; }
     .aic-text { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--white); }
     .about-right { padding-top: 8px; }
     .about-body { font-size: 0.97rem; font-weight: 300; color: var(--muted); line-height: 1.8; margin-bottom: 20px; }
@@ -248,7 +249,8 @@
       transition: background 0.2s; border: 1px solid transparent;
     }
     .cred:hover { background: rgba(232,81,10,0.12); border-color: rgba(232,81,10,0.3); }
-    .cred-icon { font-size: 1.8rem; display: block; margin-bottom: 14px; }
+    .cred-icon { font-size: 1.8rem; display: inline-flex; margin-bottom: 14px; color: rgba(255,255,255,0.85); }
+    .cred:hover .cred-icon { color: var(--orange2); }
     .cred-name { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.75); line-height: 1.45; }
 
     /* ── CONTACT ── */
@@ -420,37 +422,37 @@
     <div class="services-grid">
       <div class="svc reveal">
         <div class="svc-num">01</div>
-        <div class="svc-icon-wrap">🏡</div>
+        <div class="svc-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg></div>
         <div class="svc-name">Residential Real Estate</div>
         <p class="svc-desc">Aerial photo and video for listings of all sizes. Vertical social media formats available for luxury estates.</p>
       </div>
       <div class="svc reveal">
         <div class="svc-num">02</div>
-        <div class="svc-icon-wrap">🏢</div>
+        <div class="svc-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 12h4" /> <path d="M10 8h4" /> <path d="M14 21v-3a2 2 0 0 0-4 0v3" /> <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" /> <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" /></svg></div>
         <div class="svc-name">Commercial Real Estate</div>
         <p class="svc-desc">Showcase commercial properties and developments with imagery that makes buyers and tenants take notice.</p>
       </div>
       <div class="svc reveal">
         <div class="svc-num">03</div>
-        <div class="svc-icon-wrap">🏗️</div>
+        <div class="svc-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="8" rx="1" /> <path d="M17 14v7" /> <path d="M7 14v7" /> <path d="M17 3v3" /> <path d="M7 3v3" /> <path d="M10 14 2.3 6.3" /> <path d="m14 6 7.7 7.7" /> <path d="m8 6 8 8" /></svg></div>
         <div class="svc-name">Construction Progress</div>
         <p class="svc-desc">Weekly, bi-weekly, or monthly site aerials. Keep stakeholders informed from groundbreak to completion.</p>
       </div>
       <div class="svc reveal">
         <div class="svc-num">04</div>
-        <div class="svc-icon-wrap">🎥</div>
+        <div class="svc-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" /> <rect x="2" y="6" width="14" height="12" rx="2" /></svg></div>
         <div class="svc-name">Promotional Cinematography</div>
         <p class="svc-desc">Brand content and social media video — shot and professionally edited, ready to publish.</p>
       </div>
       <div class="svc reveal">
         <div class="svc-num">05</div>
-        <div class="svc-icon-wrap">🏁</div>
+        <div class="svc-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528" /></svg></div>
         <div class="svc-name">Event Coverage</div>
         <p class="svc-desc">Capture the scale of your race, tournament, or grand opening from above. Show your audience just how big it really was.</p>
       </div>
       <div class="svc reveal">
         <div class="svc-num">06</div>
-        <div class="svc-icon-wrap">🔍</div>
+        <div class="svc-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34" /> <circle cx="11" cy="11" r="8" /></svg></div>
         <div class="svc-name">Aerial Inspection</div>
         <p class="svc-desc">Safety and efficiency imaging for infrastructure and industrial sites — without putting anyone at risk.</p>
       </div>
@@ -497,7 +499,7 @@
       <div class="about-img">
         <img src="/img/about.jpg" alt="Blackbird Strategic">
         <div class="about-img-caption">
-          <span class="aic-icon">📍</span>
+          <span class="aic-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg></span>
           <span class="aic-text">Headquartered North of Charlotte, NC</span>
         </div>
       </div>
@@ -550,12 +552,12 @@
       <p class="cred-sub">Every pilot and crew member meets strict professional and safety standards — so you never have to wonder.</p>
     </div>
     <div class="cred-grid">
-      <div class="cred reveal"><span class="cred-icon">✈️</span><div class="cred-name">FAA Part 107<br>Licensed Pilots</div></div>
-      <div class="cred reveal"><span class="cred-icon">🛡️</span><div class="cred-name">General Liability +<br>Flight Insurance</div></div>
-      <div class="cred reveal"><span class="cred-icon">🦺</span><div class="cred-name">OSHA 30<br>Pilot Certified</div></div>
-      <div class="cred reveal"><span class="cred-icon">🚑</span><div class="cred-name">First Aid<br>Certified</div></div>
-      <div class="cred reveal"><span class="cred-icon">🔒</span><div class="cred-name">Background<br>Checked</div></div>
-      <div class="cred reveal"><span class="cred-icon">👷</span><div class="cred-name">OSHA 10<br>All Crew Members</div></div>
+      <div class="cred reveal"><span class="cred-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" /></svg></span><div class="cred-name">FAA Part 107<br>Licensed Pilots</div></div>
+      <div class="cred reveal"><span class="cred-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></svg></span><div class="cred-name">General Liability +<br>Flight Insurance</div></div>
+      <div class="cred reveal"><span class="cred-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5" /> <path d="M14 6a6 6 0 0 1 6 6v3" /> <path d="M4 15v-3a6 6 0 0 1 6-6" /> <rect x="2" y="15" width="20" height="4" rx="1" /></svg></span><div class="cred-name">OSHA 30<br>Pilot Certified</div></div>
+      <div class="cred reveal"><span class="cred-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /> <path d="M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></svg></span><div class="cred-name">First Aid<br>Certified</div></div>
+      <div class="cred reveal"><span class="cred-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /> <path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg></span><div class="cred-name">Background<br>Checked</div></div>
+      <div class="cred reveal"><span class="cred-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <path d="M16 3.128a4 4 0 0 1 0 7.744" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <circle cx="9" cy="7" r="4" /></svg></span><div class="cred-name">OSHA 10<br>All Crew Members</div></div>
     </div>
   </div>
 </section>
@@ -568,11 +570,11 @@
       <h2 class="sec-title reveal">Let's Talk<br>About Your<br><em>Project</em></h2>
       <p class="contact-body reveal">Whether you know exactly what you need or you're still figuring it out — reach out and we'll talk through it.</p>
       <div class="c-detail reveal">
-        <div class="c-icon">📧</div>
+        <div class="c-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /> <rect x="2" y="4" width="20" height="16" rx="2" /></svg></div>
         <div><div class="c-label">Email</div><div class="c-val"><a href="mailto:admin@blackbirdstrategic.net">admin@blackbirdstrategic.net</a></div></div>
       </div>
       <div class="c-detail reveal">
-        <div class="c-icon">📞</div>
+        <div class="c-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg></div>
         <div><div class="c-label">Call or Text</div><div class="c-val"><a href="tel:+17049653365">(704) 965-3365</a></div></div>
       </div>
       <div class="c-region reveal">
